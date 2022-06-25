@@ -21,8 +21,8 @@
 title: "Carlos Serrano"
 baseurl: "cserrano2020.github.io" # the subpath of your site, e.g. /blog
 url: "http://carlosserrano.me" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  cserrano2020
 linkedin_username: carloshenriqueserrano
+github_username:  cserrano2020
 description: >- # this means to ignore newlines until "baseurl:"
   Compartilhando um pouco sobre o dia a dia
 # Build settings
