@@ -28,7 +28,7 @@ baseurl: "cserrano2020.github.io" # the subpath of your site, e.g. /blog
 url: "http://carlosserrano.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-linkedin_username: carlos
+linkedin_username: carloshenriqueserrano
 
 # Build settings
 theme: minima
