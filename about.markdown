@@ -4,27 +4,13 @@ title: Sobre
 permalink: /sobre/
 ---
 
-Sou líder técnico Cloud, responsável pela arquitetura, implementação e suporte da infraestrutura na AWS.
+Pai da Helena, Paulista, 35 anos, entusiasta em engenharia e arquitetura AWS.
 
-Em minha trajetória profissional, sempre busquei conhecimento e aprimoramento técnico, aprendendo novas tecnologias e entendendo os cenários aplicáveis para solucionar problemas nas empresas.
+Formação acadêmica:
+ - Tecnólogo em Gerenciamento de Redes de Computadores - Unip
+ - MBA em Cloud Computing - FIAP
 
-Tenho experiência com:
-AWS
-Docker
-Ansible
-Jenkins
-Zabbix
-Grafana
-
-Estou aprimorando meus conhecimentos nas ferramentas: 
-Azure
-Openshift
-Dynatrace
-Kubernetes
-Terraform
-GitLab
-Linux
-Shell
-Python
-SonarQube
-Splunk
+Certificações recentes:
+ - AWS Certified Solutions Architect - Associate (SAA-C02).
+ - AWS Certified SysOps Administrator - Associate (SOA-C02)
+ - GitLab Certified Associate
