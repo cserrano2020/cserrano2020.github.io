@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AWS: Stop/Start services"
+title:  "AWS: Stop/Start services ECS"
 date:   2022-06-28 20:00:00 +0000
 categories: jekyll update
 ---
