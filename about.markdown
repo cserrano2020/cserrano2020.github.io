@@ -14,3 +14,5 @@ Certificações recentes:
  - AWS Certified Solutions Architect - Associate (SAA-C02).
  - AWS Certified SysOps Administrator - Associate (SOA-C02)
  - GitLab Certified Associate
+
+ **Serrano**
