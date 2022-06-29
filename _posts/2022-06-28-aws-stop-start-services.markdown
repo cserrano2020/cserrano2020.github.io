@@ -14,16 +14,16 @@ No primeiro momento, utilizei uma imagem docker amazon/aws-cli [aws-cli] em conj
 Após validar algumas alternativas, acabei aprofundando um pouco mais no AWS SDK para Python [aws-sdk]. Com o script em Python (Boto3), houve uma redução significativa no tempo de execução do script, além de eliminar a necessidade de ajuste no template a cada alteração de serviços. 
 Vou compartilhar com vocês o script que foi grande parte da solução do problema. 
 
-1. Configuração do ambiente 
+* Configuração do ambiente 
 
-É necessário a instalação do Boto3 no Python e configurar as credenciais de autenticação na AWS, o passo a passo esta nesse link [aws-sdk-config].
+É necessário a instalação do Boto3 no Python e configurar as credenciais de autenticação na AWS, segue o link com o passo a passo [aws-sdk-config].
 O ideal é executar o script via EC2 ou Lambda com IAM roles, caso não seja possível, atente-se a configuração do profile por AWS CLI. Na etapa abaixo, estamos apontando o perfil default para autenticação.
 
 {% highlight ruby %}
 boto3.setup_default_session(profile_name='default')
 {% endhighlight %}
 
-2. Listar/Desligar/Ligar serviços do cluster ECS
+* Listar/Desligar/Ligar serviços do cluster ECS
 
 Para reaproveitar o script, vamos executá-lo com 03 parâmetros, nome do cluster, região e 0 para desligar ou 1 para ligar. Siga essa ordem para não falhar a execução.
 
@@ -43,7 +43,7 @@ python3 script.py app-dev us-east-1 1
 
 Ao final da execução, deverá aparecer a mensagem "Sucess", indicando que o script foi executado com sucesso.
 
-3. Script Python
+* Script Python
 
 Segue o script python que tanto estou falando;
 
