@@ -5,7 +5,7 @@ date:   2022-06-28 20:00:00 +0000
 categories: jekyll update
 ---
 
-Olá pessoal, tudo bem? 
+Olá, tudo bem? 
 Esse é o meu primeiro post no site, o objetivo sempre será o compartilhamento de conhecimento, dicas e experiências sobre Cloud e DevOps.
 
 Então vamos lá, há um certo tempo, me deparei com a necessidade de ligar e desligar o ambiente não produtivo em ECS conforme jornada das fábricas de software.
