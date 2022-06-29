@@ -30,15 +30,63 @@ Para reaproveitar o script, vamos executá-lo com 03 parâmetros, nome do cluste
 {% highlight ruby %}
 python3 script.py nome_do_cluster_ecs região 0(desligar) ou 1(ligar) 
 {% endhighlight %}
+
     Desligando os serviços
 {% highlight ruby %}
 python3 script.py app-dev us-east-1 0
 {% endhighlight %}
+
     Ligando os serviços
 {% highlight ruby %}
 python3 script.py app-dev us-east-1 1
 {% endhighlight %}
 
+Ao final da execução, deverá aparecer a mensagem "Sucess", indicando que o script foi executado com sucesso.
+
+3. Script Python
+
+Segue o script python que tanto estou falando;
+
+{% highlight ruby %}
+
+import boto3
+import sys
+from botocore.exceptions import ClientError
+
+boto3.setup_default_session(profile_name='default')
+
+client = boto3.client('ecs', region_name=sys.argv[2])
+
+try:
+    response_list = client.list_services(
+        cluster=sys.argv[1],
+        maxResults=100
+    )
+
+except ClientError as error:
+    print(error)
+
+try:
+    for listservice in response_list['serviceArns']:
+        client.update_service(
+            cluster=sys.argv[1],
+            service=listservice,
+            desiredCount=sys.argv[3]
+        )
+except ClientError as error:
+    print(error)
+
+print('Success')
+
+{% endhighlight %}
+
+---
+
+É isso aí, nos vemos em um proximo post.
+
+Grande abraço.
+
+**Serrano**
 
 [aws-cli]: https://hub.docker.com/r/amazon/aws-cli
 [ansible-awx]:   https://github.com/ansible/awx
